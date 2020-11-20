@@ -99,10 +99,10 @@ const product = () => {
                 รายละเอียดร้าน
               </p>
               <h4>
-                {`ร้าน ${Shop.name}`}
+                {`ร้าน ${Shop.shopName}`}
               </h4>
               <p className="mb-2">
-                {`รหัสร้านค้า: ${Shop.id}`}
+                {`รหัสร้านค้า: ${Shop.sales_id}`}
               </p>
               <Button variant="outline-warning">ดูร้านค้า</Button>
             </div>
@@ -133,9 +133,9 @@ const product = () => {
           {Review.error === 'No review data' && <Col><h6>ยังไม่มีรีวิว</h6></Col>}
           {Review.reviews && Review.reviews.map((item) => (
             <Col lg={12}>
-              <p>{`ผู้ใช้: ${item.user}`}</p>
-              <p>{`คะแนน: ${item.rate}`}</p>
-              <p>{`ความคิดเห็น: ${item.comment}`}</p>
+              <p>{`ผู้ใช้: ${item.username}`}</p>
+              <p>{`คะแนน: ${item.rank}`}</p>
+              <p>{`ความคิดเห็น: ${item.content}`}</p>
               <hr />
             </Col>
           ))}

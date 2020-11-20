@@ -5,25 +5,30 @@ export default (req, res) => {
 
   const data = [
     {
-      id: 1,
       reviews: [
         {
-          user: 'user1',
-          rate: 5,
-          comment: 'ดีมากครับ',
-          option: 'ม่วงส้ม PurpleOrange',
+          id: 1,
+          rank: 5,
+          content: 'ดีมากครับ',
+          photo: '/review/1/review.jpg',
+          product_id: 1,
+          username: 'user1',
         },
         {
-          user: 'user2',
-          rate: 4,
-          comment: 'สีสวยมาก ถูกใจเลย',
-          option: 'เขียวชมพู GreenPink',
+          id: 2,
+          rank: 4,
+          content: 'สีสวยมาก ถูกใจเลย',
+          photo: '/review/1/review.jpg',
+          product_id: 1,
+          username: 'user2',
         },
         {
-          user: 'user3',
-          rate: 1,
-          comment: 'กล่องขาด เหมือนโดนแกะ',
-          option: 'แดงฟ้า Neon',
+          id: 3,
+          rank: 1,
+          content: 'กล่องขาด เหมือนโดนแกะ',
+          photo: '/review/1/review.jpg',
+          product_id: 1,
+          username: 'user3',
         },
       ],
     },
